@@ -1,0 +1,172 @@
+/*********  Web Design
+**********  2019FA.WEB.210.4101
+**********  Nicolas D'Agata
+**********  Lesson 07 - Assignment 01
+**********  Kevin Morgan
+**********  10/03/2019
+*/
+/* Background Galaxy Pic Palette
+Pale Goldenrod #e7ceb2
+Steel Blue #3f6b96
+Indian Red #b7695d
+Black #1a0d0e
+Dark Olive Green #6e3738 */
+/*----------------------------------------
+        Global Settings 
+----------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 10px;
+    background-image: url('../images/background_galaxy.jpg');
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+}
+img {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 1em 0;
+}
+.scsm {
+    display: none;
+}
+/*----------------------------------------
+        Header Settings 
+----------------------------------------*/
+header {
+    background-color: #3f6b96;
+    padding: 10px;
+    color: #eee;
+    border-radius: 10px;
+}
+header h1 {
+    text-align: center;
+    padding: 0;
+}
+header h2 {
+    text-align: center;
+}
+header p {
+    text-align: justify;
+    padding-bottom: 10px;
+}
+/*----------------------------------------
+        Navigation Settings 
+----------------------------------------*/
+nav li {
+    text-align: center;
+    list-style: none;
+    background-color: #3f6b96;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+nav li a {
+    text-decoration: none;
+    color: #e7ceb2;
+}
+/*----------------------------------------
+        Experience Settings 
+----------------------------------------*/
+#experience {
+    background-color: #e7ceb2;
+    margin-top: 10px;
+    padding: 10px;
+    color: #000;
+    border-radius: 10px;
+}
+#experience h2 {
+    text-align: center;
+    padding: 0;
+}
+#experience h3 {
+    padding-bottom: 5px;
+}
+#experience .col-narrow {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+#experience .col-wide {
+    padding-bottom: 20px;
+    border-bottom: 3px solid black;
+}
+#experience li {
+    list-style-position: inside;
+    padding-left: 4px;
+}
+/*----------------------------------------
+        Education Settings 
+----------------------------------------*/
+#education {
+    background-color: #b7695d;
+    margin-top: 10px;
+    padding: 10px;
+    color: #000;
+    border-radius: 10px;
+}
+#education h2 {
+    text-align: center;
+    padding: 0;
+}
+#education h3 {
+    padding-bottom: 5px;
+}
+#education .col-narrow {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+#education .col-wide {
+    padding-bottom: 20px;
+    border-bottom: 3px solid black;
+}
+#education li {
+    list-style-position: inside;
+    padding-left: 4px;
+}
+/*----------------------------------------
+        Footer Settings 
+----------------------------------------*/
+footer {
+    margin-top: 10px;
+    background-color: #3f6b96;
+    padding: 10px;
+    color: #eee;
+    border-radius: 10px;
+}
+footer h2 {
+    text-align: center;
+    padding: 0 0 0 5px;
+    border-bottom: 2px solid white;
+}
+footer p {
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 500px) {
+    
+}
+
+
+/*
+.col-narrow {
+    background-color: yellow;
+    width: 100%;
+}
+.col-wide {
+    background-color: green;
+    width: 100%;
+    list-style-position: inside;
+}*/
