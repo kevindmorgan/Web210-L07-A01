@@ -49,10 +49,10 @@ header {
     color: #eee;
     border-radius: 10px;
 }
-header h1 {
+/*header h1 {
     text-align: center;
     padding: 0;
-}
+}*/
 header h2 {
     text-align: center;
 }
@@ -60,6 +60,45 @@ header p {
     text-align: justify;
     padding-bottom: 10px;
 }
+header h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: white;
+    margin: 0;
+    padding: 35px 0 0 0;
+ 
+ /*--------------------------------------
+       Set Up the Font Animation
+ --------------------------------------*/
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 5;
+ }
+ 
+ /*--------------------------------------
+       Animate the Name
+ --------------------------------------*/
+ /* Safari 4.0 - 8.0 */
+ @-webkit-keyframes example {
+    0%   {color: #ffffff;}
+    20%  {color: #e5e5e5;}
+    40%  {color: #7c7c7c;}
+    60%  {color: #606060;}
+    80%  {color: #7c7c7c;}
+    100% {color: #e5e5e5;}
+ }
+ /* Standard syntax */
+ @keyframes example {
+    0%   {color: #ffffff;}
+    20%  {color: #e5e5e5;}
+    40%  {color: #7c7c7c;}
+    60%  {color: #606060;}
+    80%  {color: #7c7c7c;}
+    100% {color: #e5e5e5;}
+ }
 /*----------------------------------------
         Navigation Settings 
 ----------------------------------------*/
@@ -93,11 +132,9 @@ nav li a {
 }
 #experience .col-narrow {
     padding-bottom: 10px;
-    border-bottom: 1px solid black;
 }
 #experience .col-wide {
     padding-bottom: 20px;
-    border-bottom: 3px solid black;
 }
 #experience li {
     list-style-position: inside;
@@ -122,11 +159,9 @@ nav li a {
 }
 #education .col-narrow {
     padding-bottom: 10px;
-    border-bottom: 1px solid black;
 }
 #education .col-wide {
     padding-bottom: 20px;
-    border-bottom: 3px solid black;
 }
 #education li {
     list-style-position: inside;
@@ -155,18 +190,94 @@ footer a {
     color: white;
 }
 
+/*----------------------------------------
+        Media Queries 
+----------------------------------------*/
 @media (min-width: 500px) {
-    
+    .container {
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sclg {
+        display: none;
+    }
+    .card {
+        background-color: red;
+        border-bottom: 1px solid black;
+    }
+    .col-narrow {
+        width: 30%;
+        float: left;
+        margin-right: 3%;
+    }
+    .col-wide {
+        width: 65%;
+        float: left;
+    }
+    header {
+        height: 290px;
+    }
+    img {
+        width: 100px;
+        height: auto;
+    }
+    .card {
+        clear: both;
+    }
+    #experience, 
+    #education, 
+    #footer {
+        overflow: hidden;
+    }
+    .col-narrow h3 {
+        padding-top: 0;
+    }
+/*--------------------------------------
+      Navigation Section Styles
+--------------------------------------*/
+nav {
+    background-color: #3f6b96;
+    border-radius: 0 0 25px 25px;
+ }
+ nav a {
+    text-decoration: none; /* turn off underline */
+    color: #e7ceb2;
+ }
+ nav ul li:hover {
+    background-color: #b7695d;
+    color: #e7ceb2;
+ }
+ nav ul {
+    list-style: none; /* turn off bullets */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+ }
+ nav ul li {
+    font-weight: bold;
+    display: inline-block; /* display horizontally */
+    position: relative; /* allow submenus to display relative to menu */
+    padding: 10px 15px;
+ }
+ nav ul li ul {
+    left: -99999px;
+    position: absolute;
+    top: 44px; /* move submenu down to clear main menu */
+ }
+ ul li:hover ul {
+    left: 0px; /* bring back submenu on screen */
+ }
+ ul li ul li {
+    background-color: #3f6b96;
+    width: 140%;
+ 
+ }
+
 }
-
-
-/*
-.col-narrow {
+/*.col-narrow {
     background-color: yellow;
-    width: 100%;
 }
 .col-wide {
     background-color: green;
-    width: 100%;
-    list-style-position: inside;
 }*/
